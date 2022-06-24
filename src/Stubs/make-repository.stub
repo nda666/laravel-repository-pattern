@@ -1,0 +1,12 @@
+<?php
+
+namespace {{ namespace }};
+
+use DummyInterfaceImport;
+
+class {{ class }} implements DummyInterface
+{
+    public function getAll()
+    {
+    }
+}

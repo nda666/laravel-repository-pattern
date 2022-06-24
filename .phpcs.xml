@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset name="Laravel Standards">
+    <description>The Laravel Coding Standards</description>
+
+    <file>src</file>
+
+    <arg name="report" value="summary"/>
+    <arg name="colors"/>
+    <arg value="p"/>
+
+    <ini name="memory_limit" value="128M"/>
+
+    <rule ref="PSR12">
+        <exclude name="PSR12.Files.FileHeader.SpacingInsideBlock"/>
+    </rule>
+</ruleset>
