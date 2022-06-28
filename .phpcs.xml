@@ -3,6 +3,7 @@
     <description>The Laravel Coding Standards</description>
 
     <file>src</file>
+    <file>tests</file>
 
     <arg name="report" value="summary"/>
     <arg name="colors"/>

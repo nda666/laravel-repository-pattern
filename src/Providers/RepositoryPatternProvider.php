@@ -4,7 +4,6 @@ namespace LaravelRepositoryPattern\Providers;
 
 use HaydenPierce\ClassFinder\ClassFinder;
 use Illuminate\Support\ServiceProvider;
-use LaravelRepositoryPattern\Commands\MakeInterface;
 use LaravelRepositoryPattern\Commands\MakeRepository;
 
 class RepositoryPatternProvider extends ServiceProvider

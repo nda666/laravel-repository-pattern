@@ -1,10 +1,10 @@
 <?php
 
-namespace {{ namespace }};
+namespace DummyNamespace;
 
 use DummyInterfaceImport;
 
-class {{ class }} implements DummyInterface
+class DummyClass implements DummyInterface
 {
     public function getAll()
     {
