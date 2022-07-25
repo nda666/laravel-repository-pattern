@@ -40,14 +40,17 @@ class MakeRepository extends GeneratorCommand
     protected function replaceClass($stub, $name)
     {
         $stub = parent::replaceClass($stub, $name);
-        $posibleName =  str_replace('Repository', '', $this->getNameInput()) . 'Interface';
-
+        $posibleName = str_replace('Repository', 'Interface', $this->getNameInput());
+        $posibleName = str_replace('/', '\\', $posibleName);
         $stub = str_replace(
             'DummyInterfaceImport',
             config('laravel-repository-pattern.interface_namespace') . '\\' .  $posibleName,
             $stub
         );
-        $stub = str_replace('DummyInterface', $posibleName, $stub);
+
+        $exImplement = explode('\\', $posibleName);
+        $posibleInterface = count($exImplement) ? $exImplement[count($exImplement) - 1] : $posibleName;
+        $stub = str_replace('DummyInterface', $posibleInterface, $stub);
 
         return $stub;
     }
