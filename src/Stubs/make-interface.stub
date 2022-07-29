@@ -4,5 +4,4 @@ namespace DummyNamespace;
 
 interface DummyClass
 {
-    public function getAll();
 }

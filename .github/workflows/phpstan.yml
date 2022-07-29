@@ -1,5 +1,5 @@
 on: [push, pull_request]
-name: Testing
+name: PhpStan
 
 jobs:
   test:
@@ -31,8 +31,5 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist
 
-      - name: Run lint
-        run: composer run lint
-
-      - name: Run test
-        run: composer run test
+      - name: Run static analysis (phpstan)
+        run: composer run phpstan
