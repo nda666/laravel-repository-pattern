@@ -1,4 +1,4 @@
-# Laravel Repository Patterent
+# Laravel Repository Pattern
 
 It's a simple repository file generator.
 
